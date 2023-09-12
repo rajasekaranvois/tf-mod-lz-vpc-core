@@ -1,9 +1,5 @@
 # tf-mod-lz-vpc-core
 
-| Version|Author|Email|
-|---|---|---|
-|1.0|Alexander Galstyan|alexander.galstyan@vodafone.com|
-
 <br></br>
 #### **SUMMARY**
 ----------------
