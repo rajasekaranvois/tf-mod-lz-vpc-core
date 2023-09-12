@@ -1,0 +1,18 @@
+# Provider
+provider "aws" {
+  shared_credentials_file = "~/.aws/credentials"
+  profile                 = "staging-vfde-bss-deployment"
+  region                  = "eu-central-1"
+}
+
+# Terraform Remote Statefile
+terraform {
+  backend "s3" {
+    bucket         = "745575824439-terraformstates"
+    key            = "tf-mod-lz-vpc-core-init/state"
+    region         = "eu-central-1"
+    shared_credentials_file = "~/.aws/credentials"
+    profile        = "staging-vfde-bss-deployment"
+    dynamodb_table = "vfde-745575824439-tf-locks"
+  }
+}

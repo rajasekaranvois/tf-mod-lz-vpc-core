@@ -1,0 +1,47 @@
+# VPC
+vpc_cidr_block = {
+    "main": "10.158.0.0/16"
+}
+
+# Subnets
+private_subnets = {
+    "name" : "net-priv",
+    "subnet_count" : 3,
+    "subnet_bits" : 8,
+    "network_zone" : "M"
+}
+
+public_subnets = {
+    "name" : "net-pub",
+    "subnet_count" : 3,
+    "subnet_bits" : 8,
+    "network_zone" : "DMZ"
+}
+
+internal_subnets = {
+    "name" : "net-internal",
+    "subnet_count" : 3,
+    "subnet_bits" : 8,
+    "network_zone" : "M"
+}
+
+# Gateway
+enable_nat_gateway = true
+single_nat_gateway = true
+
+# Tags
+common_tags = {
+    ## PCS based tags
+    Environment      = "__ENVIRONMENT__"
+    PONumber         = "__PO_NUMBER__"
+    LMEntity         = "VFDE"
+    BU               = "LOCAL-MARKET"
+    Project          = "__PROJECT__"
+    ManagedBy        = "awscoretech.deg@vodafone.com"
+    SecurityZone     = "I-A"
+    Confidentiality  = "C2"
+    TaggingVersion   = "V2.4"
+    BusinessService  = "__BUSINESS_SERVICE__" 
+    ## VFDE based tags
+    GeneratedBy      = "Cloudfiction TF"
+}

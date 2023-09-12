@@ -1,0 +1,15 @@
+*.plan 
+.terraform
+.terraform.lock.hcl
+.DS_Store
+~*.*
+*.vscode
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/aws.xml
+.idea/CloudFiction.iml
+.idea/.gitignore
+*.zip
+__pycache__/
